@@ -1,0 +1,13 @@
+.countryCard {
+  background-color: hsl(209, 23%, 22%);
+  padding: 1.2rem;
+  width: 20rem;
+}
+
+.innerCard {
+  padding-left: 10px;
+}
+.flag {
+  width: 20rem;
+  height: 12rem;
+}

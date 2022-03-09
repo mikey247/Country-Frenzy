@@ -1,0 +1,11 @@
+.countrylist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.countrylist a {
+  text-decoration: none;
+  color: white;
+}
