@@ -6,21 +6,10 @@ const CountryDetail = () => {
   const [country, setCountry] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
-  // console.log(id);
-
-  // const fetchCountryData = async () => {
-  //   const res = await fetch(`https://restcountries.com/v3.1/name/${id}`);
-  //   const data = await res.json();
-  //   const currentData = data[0];
-  //   console.log(currentData);
-  //   setIsLoading(false);
-  //   setCountry(currentData);
-  // };
+  console.log(id);
 
   useEffect(() => {
-    // fetchCountryData();
-    fetch(`https://restcountries.com/v2/name/${id}
-    `)
+    fetch(`https://restcountries.com/v2/name/${id}`)
       .then((res) => res.json())
       .then((data) => {
         let currentData = data;

@@ -43,7 +43,7 @@ const TheCountryInfo = ({ country }) => {
               <div className={classes.neighbourlinks}>
                 {country.borders ? (
                   country.borders.map((neighbour) => (
-                    <Link to={`/neighbours/${neighbour}`}>{neighbour}</Link>
+                    <Link to={`/neighbour/${neighbour}`}>{neighbour}</Link>
                   ))
                 ) : (
                   <p>No neigbor</p>

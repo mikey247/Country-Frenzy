@@ -6,15 +6,12 @@ const CountryList = ({ loadedCountries }) => {
   return (
     <div className={classes.countrylist}>
       {loadedCountries.map((loadedCountries) => (
-        <Link
-          to={`/${loadedCountries.name.common}`}
-          key={loadedCountries.name.common}
-        >
+        <Link to={`/${loadedCountries.name}`} key={loadedCountries.name}>
           <CountryCard
             flag={loadedCountries.flags.svg}
-            name={loadedCountries.name.common}
+            name={loadedCountries.name}
             population={loadedCountries.population}
-            continent={loadedCountries.continents}
+            continent={loadedCountries.region}
             capital={loadedCountries.capital}
           />
         </Link>
