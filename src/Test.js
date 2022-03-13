@@ -1,9 +1,19 @@
 const Test = () => {
-  return (
-    <>
-      <h1> working</h1>
-    </>
-  );
+  const currencies = {
+    EUR: {
+      name: "Euro",
+      symbol: "€",
+    },
+    CHF: {
+      name: "Franc",
+      symbol: "$",
+    },
+  };
+  for (const [key, value] of Object.entries(currencies)) {
+    console.log(key, value.name);
+  }
+
+  return <></>;
 };
 
 export default Test;

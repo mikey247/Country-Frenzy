@@ -11,7 +11,7 @@ const CountryList = ({ loadedCountries }) => {
           key={loadedCountries.name.common}
         >
           <CountryCard
-            flag={loadedCountries.flags.png}
+            flag={loadedCountries.flags.svg}
             name={loadedCountries.name.common}
             population={loadedCountries.population}
             continent={loadedCountries.continents}

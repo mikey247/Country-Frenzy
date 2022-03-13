@@ -1,15 +1,31 @@
 .countryDetailContainer {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-content: space-between;
-  width: 90%;
+  width: 80%;
   margin: 10rem auto;
 }
 .countrySpecifics {
   display: flex;
   gap: 3rem;
 }
-.leftDetail img {
-  width: 28rem;
+.detailFlag {
+  width: 25rem;
   height: 20rem;
+  margin-right: 30px;
+}
+/* .countrySpecifics {
+  display: flex;
+  justify-content: space-between;
+} */
+.countryName {
+  font-size: 2rem;
+}
+.neighbourlinks a {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  background-color: hsl(209, 23%, 22%);
+  padding: 8px;
+  border-radius: 5px;
 }

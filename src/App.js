@@ -1,13 +1,18 @@
 import HomePage from "./HomePage";
 import { Route, Routes } from "react-router-dom";
 import CountryDetail from "./CountryDetail";
-
+import Neighbour from "./Neighbour";
+import SearchBar from "./SearchBar";
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route exact strict path="/:id/*" element={<CountryDetail />} />
-    </Routes>
+    <>
+      <SearchBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:id" element={<CountryDetail />} />
+        <Route path="/neighbours/:id" element={<Neighbour />} />
+      </Routes>
+    </>
   );
 }
 

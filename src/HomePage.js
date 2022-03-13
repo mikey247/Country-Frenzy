@@ -22,11 +22,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <form action="">
-        <input type="text" />
-        <button>Search</button>
-      </form>
-
       {loadedCountries && <CountryList loadedCountries={loadedCountries} />}
     </div>
   );

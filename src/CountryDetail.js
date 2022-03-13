@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import TheCountryInfo from "./TheCountryInfo";
 
 const CountryDetail = () => {
   const [country, setCountry] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   // const fetchCountryData = async () => {
   //   const res = await fetch(`https://restcountries.com/v3.1/name/${id}`);
@@ -19,11 +19,11 @@ const CountryDetail = () => {
 
   useEffect(() => {
     // fetchCountryData();
-    fetch(`https://restcountries.com/v3.1/name/${id}
+    fetch(`https://restcountries.com/v2/name/${id}
     `)
       .then((res) => res.json())
       .then((data) => {
-        let currentData = data[0];
+        let currentData = data;
         console.log(currentData);
         setIsLoading(false);
         setCountry(currentData);
@@ -37,7 +37,7 @@ const CountryDetail = () => {
     return <p>Loading.....</p>;
   }
 
-  return <>{country && <TheCountryInfo country={country} />}</>;
+  return <>{country && <TheCountryInfo country={country[0]} />}</>;
 };
 
 export default CountryDetail;
