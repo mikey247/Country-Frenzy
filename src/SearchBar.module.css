@@ -1,10 +1,16 @@
 ::placeholder {
   color: lightgray;
-  opacity: 1; 
+  opacity: 1;
 }
-.searchForm {
-  width: 60%;
+.navbar {
+  width: 90%;
   margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
 }
 
 .searchForm input {
@@ -14,7 +20,7 @@
   background-color: hsl(209, 23%, 22%);
   border: none;
   color: white;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 0.5rem;
 }
 
@@ -22,10 +28,63 @@
   width: 10rem;
   height: 2rem;
   border: none;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 0.2rem;
   margin-left: 1rem;
   background-color: hsl(209, 23%, 22%);
   border: none;
   color: white;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 11px;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar a {
+    text-align: center;
+  }
+  .searchForm input {
+    width: 10rem;
+    height: 2rem;
+    font-size: 9px;
+  }
+  .searchForm {
+    margin-left: 5rem;
+  }
+  .searchForm button {
+    width: 10rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 13.5px;
+  }
+
+  .searchForm input {
+    width: 8rem;
+    height: 2rem;
+  }
+  .searchForm {
+    margin-left: 4rem;
+  }
+  .searchForm button {
+    width: 6rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
 }

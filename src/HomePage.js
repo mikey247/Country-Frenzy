@@ -1,4 +1,3 @@
-// import CountryCard from "./CountryCard";
 import { useState, useEffect } from "react";
 import CountryList from "./CountryList";
 const HomePage = () => {

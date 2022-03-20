@@ -9,3 +9,35 @@
   text-decoration: none;
   color: white;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 11px;
+  }
+  .countrylist {
+    padding-left: 7.5rem;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 13.5px;
+  }
+  .countrylist {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
+  .countrylist {
+    padding-left: 1.5rem;
+  }
+}

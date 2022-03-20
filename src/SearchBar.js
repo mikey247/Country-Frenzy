@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classes from "./SearchBar.module.css";
 const SearchBar = () => {
   const navigate = useNavigate();
@@ -9,18 +10,25 @@ const SearchBar = () => {
     event.preventDefault();
     const searchedCountry = countryRef.current.value;
     navigate(`/${searchedCountry}`);
+    countryRef.current.value = "";
   };
 
   return (
     <>
-      <form action="" onSubmit={searchCountry} className={classes.searchForm}>
-        <input
-          type="text"
-          placeholder="Search by Name e.g USA,Nigeria etc."
-          ref={countryRef}
-        />
-        <button>Search</button>
-      </form>
+      <nav className={classes.navbar}>
+        <Link to={"/"}>
+          <h1>COUNTRY FRENZY</h1>
+        </Link>
+
+        <form action="" onSubmit={searchCountry} className={classes.searchForm}>
+          <input
+            type="text"
+            placeholder="Search by Name e.g USA,Nigeria etc."
+            ref={countryRef}
+          />
+          <button>Search</button>
+        </form>
+      </nav>
     </>
   );
 };

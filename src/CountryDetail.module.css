@@ -29,3 +29,37 @@
   padding: 8px;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+  .neighbourlinks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 11px;
+  }
+  .countryDetailContainer {
+    display: block;
+    width: 65%;
+    margin: 3rem auto;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 13.5px;
+  }
+  .countryDetailContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
+}
