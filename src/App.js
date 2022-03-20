@@ -4,8 +4,6 @@ import CountryDetail from "./CountryDetail";
 import Neighbour from "./Neighbour";
 import SearchBar from "./SearchBar";
 
-import Filter from "./Filter";
-
 function App() {
   return (
     <>
